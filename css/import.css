@@ -1,0 +1,11 @@
+div
+{
+
+	height: 350px;
+	background: seagreen;
+	font-size: 45px;
+	font-weight: bold;
+	-webkit-text-stroke-color:red;
+	-webkit-text-stroke-width:1px;
+
+}

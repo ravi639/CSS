@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+			.foreground
+			{
+				height: 250px;
+				width: 50%;
+				border: 2px solid blue;
+			}
+
+			.foreGround img 
+		{
+			object-fit: cover;
+
+			/*object-fit: contain;*/
+			/*object-fit: scale-down;*/
+		}
+
+		.backGround
+		{
+			height: 250px;
+			width: 50%;
+			background:url(https://www.wallpaperup.com/uploads/wallpapers/2014/09/24/454898/4435180819ec2ca4cc484d04b77b8187.jpg);
+			/*background-size: 100% 100%;*/
+
+				background-size: contain;
+				background-repeat: no-repeat;
+				border: 2px solid green;
+
+				background-position: center;
+		}		
+			
+
+		.container
+		{
+			border: 2px solid red;
+
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+
+			<div class="foreGround">		
+				<img src="https://www.wallpaperup.com/uploads/wallpapers/2014/09/24/454898/4435180819ec2ca4cc484d04b77b8187.jpg" height="100%" width="100%">		
+			</div>
+		
+	</div>
+
+	<div class="container">
+
+			<div class="backGround">
+				
+			</div>
+			
+	</div>
+</body>
+</html>

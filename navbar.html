@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.nav
+		{
+			height: 50px;
+			width: 100%;
+			background: gray;
+			text-align: center;
+/*			line-height: 50px;*/
+		/*display: flex;
+			justify-content: center;
+			align-items: center;*/
+		}
+		.nav ul
+		{
+			margin: 0;
+			padding: 0;
+/*			display: flex;*/
+		}
+
+		.nav .menu 
+		{
+/*			border: 2px solid;*/
+			display: inline;
+			list-style: none;
+			margin-right: 30px;
+			position: relative;
+			
+		}
+
+
+		.nav .menu a 
+		{
+			text-decoration: none;
+			color: black;
+		}
+
+		.dropdown
+		{
+			position: absolute;
+			top:100%;
+			left: 0;
+
+			display: none;
+		}
+
+		.nav .menu:hover .dropdown
+		{
+			display: block;
+		}
+
+		.menu::after
+		{
+			content:"";
+
+			position: absolute;
+			top:100%;
+			left: 0;
+			height: 5px;
+			width: 0px;
+			background: black;
+			transition:.7s;
+		}
+
+		.menu:hover::after
+		{
+			width: 100%;
+		}	
+	</style>
+</head>
+<body>
+<div class="nav">
+
+	
+		<ul>
+			<li class="menu"><a href="">Home</a></li>
+			<li class="menu"><a href="">About</a></li>
+
+			<li class="menu"><a href="">Services</a>
+
+				<ul class="dropdown">
+					<li><a href="">service 1 </a></li>
+					<li><a href="">service 2 </a></li>
+					<li><a href="">service 3 </a></li>
+					<li><a href="">service 4 </a></li>
+				</ul>
+
+			</li>
+
+			<li class="menu"><a href="">Contact</a></li>
+			
+		</ul>
+
+
+
+
+
+
+</div>
+</body>
+</html>

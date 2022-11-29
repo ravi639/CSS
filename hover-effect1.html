@@ -1,0 +1,45 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			.xyz
+			{
+				background: lightblue;
+				height: 50px;
+				width: 100px;
+				text-align: center;
+				line-height: 50px;
+				margin:200px auto;
+				border-radius: 40px;
+				position: relative;
+				overflow: hidden;
+				z-index: 0;
+				
+
+			}
+			.abc
+			{
+				height: 100px;
+				width: 200px;
+				background: linear-gradient(red,blue,black,yellow);
+				position: absolute;
+				top:0;
+				left: -200%;
+				transition: 1s;
+				z-index: -1;
+			}
+			div:hover .abc
+			{
+				left: 0%
+			}
+		</style>
+	</head>
+	<body>
+	<div class="xyz">
+		Hover Me
+		<div class="abc"></div>
+	</div>
+	
+	</body>
+	</html>

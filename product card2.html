@@ -8,13 +8,13 @@
 		{
 			height: 300px;
 			width: 200px;
-			background: gray;
+			background: transparent;
 			position: relative;
 		}
 		.prd-img
-		{
+		{	background: transparent;
 			height: 200px;
-			width: 200px;
+			width: 200px
 
 		}
 		.view
@@ -29,6 +29,7 @@
 			left: 0;
 			opacity: 0;
 			transition: 1s;
+			z-index: 1;
 		}
 
 		.info
@@ -52,9 +53,44 @@
 
 			 box-shadow: 0 0 5px #000;
 			 padding-left: 50px ;
+			
+
 
 
 		}
+
+		.main .front,.back
+		{
+			height: 200px;
+			width:200px ;
+			background: lightblue;
+			position: absolute;
+			top:0;
+			left: 0;
+			
+			backface-visibility: hidden;
+			transition: 2s;
+		}
+
+		.main .front
+		{
+			transform: rotateY(180deg);
+		}
+
+		.main .back
+		{
+			transform: rotateY(0deg);
+		}
+
+		.main:hover .back
+		{
+			transform: rotateY(180deg);
+		}
+		.main:hover .front
+		{
+			transform: rotateY(0deg);
+		}
+
 
 	</style>
 </head>
@@ -65,6 +101,36 @@
 
 
 		<div class="prd-img">
+		<!-- <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%"> -->
+	</div>
+<div class=" view"> Quick view</div>
+
+<div class="info">
+					<p>Formal Blue Shirt</p> 
+					 <p class="price">$45.99 <del> $69.71</del></p> 
+					<button class="b">Add To Cart</button> 
+				</div>
+<div class="main">
+
+		<div class="front">
+			<!-- hi -->
+			<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%">
+		</div>
+		<div class="back">
+			<!-- hello -->
+			<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%">
+		</div>
+		
+	</div>
+		
+	</div>
+
+	      <div class="product-card">
+	
+	        <div class="product" >
+
+
+		<div class="prd-img">
 		<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%">
 	</div>
 <div class=" view"> Quick view</div>
@@ -74,6 +140,10 @@
 					 <p class="price">$45.99 <del> $69.71</del></p> 
 					<button class="b">Add To Cart</button> 
 				</div>
+
+			 
+		
+	</div>
 
 		
 	</div>
@@ -115,23 +185,6 @@
 
 		
 	</div>
-
-	      <div class="product-card">
-	
-	        <div class="product" >
-
-
-		<div class="prd-img">
-		<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%">
-	</div>
-<div class=" view"> Quick view</div>
-
-<div class="info">
-					<p>Formal Blue Shirt</p> 
-					 <p class="price">$45.99 <del> $69.71</del></p> 
-					<button class="b">Add To Cart</button> 
-				</div>
-
 		
 	</div>
 
